@@ -1,0 +1,154 @@
+.bigbox {
+    margin-bottom: 100rpx;
+}
+.lb {
+    width: 100%;
+    height: 720rpx;
+    image {
+        width: 100%;
+        height: 720rpx;
+    }
+}
+.msg {
+    width: 100%;
+    height: 300rpx;
+    padding: 0px 15rpx;
+    box-sizing: border-box;
+    border-bottom: 20rpx solid #f4f4f4;
+    .price {
+        color: #eb4450;
+        font-size: 24px;
+        margin-top: 35rpx;
+    }
+    .word {
+        margin-top: 40rpx;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            flex:1;
+            padding-right: 30rpx; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;  // 控制多行的行数
+            -webkit-box-orient: vertical;
+        }
+        .right {
+            width: 140rpx;
+            text-align: center;
+            height: 80rpx;
+            border-left: 1px solid #ccc;
+            position: relative;
+            button {
+                width: 140rpx;
+                height: 80rpx;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .isSend {
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 40rpx;
+    }
+}
+.chuxiao {
+    width: 100%;
+    height: 196rpx;
+    padding: 0 15rpx;
+    box-sizing: border-box;
+    border-bottom: 20rpx solid #f4f4f4;
+    .top {
+        line-height: 98rpx;
+        span {
+            margin-left: 40rpx;
+            &.color {
+                color: #ff2d4a;
+            }
+        }
+    }
+}
+.tab {
+    width: 100%;
+    padding: 0 10rpx;
+    box-sizing: border-box;
+    height: 100rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    line-height: 100rpx;
+    .item {
+        flex:1;
+        &.active {
+            color: #ff2d4a;
+            border-bottom: 6rpx solid #ff2d4a;
+        }
+    }
+}
+.content {
+    padding: 20rpx 20rpx;
+    .item {
+        margin-top: -2px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #aaa;
+        display: flex;
+        text-align: center;
+        height: 85rpx;
+        line-height: 85rpx;
+        .key {
+            flex: 1;
+            border: 1px solid #aaa;
+        }
+        .value {
+            flex: 1;
+            border: 1px solid #aaa;
+        }
+    }
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 98rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    .start {
+        flex: 2;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 20rpx;
+        color: #bbbbbb;
+        &.kefu {
+            position: relative;
+            button {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .end {
+        flex: 3;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 0;
+        line-height: 98rpx;
+        text-align: center;
+        &.one{
+            background-color: #f4b73f;
+        }
+        &.two {
+            background-color: #ff2d4a;
+        }
+    }
+}

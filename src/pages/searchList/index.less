@@ -1,0 +1,96 @@
+.myHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .topHead {
+    width: 100%;
+    height: 100rpx;
+    padding: 20rpx 16rpx;
+    background-color: #eee;
+    box-sizing: border-box;
+    position: relative;
+    .search {
+      width: 100%;
+      height: 60rpx;
+      background-color: #fff;
+      border-radius: 5px;
+      padding-left: 60rpx;
+      box-sizing: border-box;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 30rpx;
+      transform: translate(0%, -50%);
+      display: flex;
+      span {
+        margin-left: 6px;
+        font-size: 16px;
+        color: #cecece;
+      }
+    }
+  }
+  
+  .nav {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    .n-item {
+      flex: 1;
+      line-height: 100rpx;
+      text-align: center;
+      &.active {
+        color: #eb4450;
+      }
+    }
+  }
+  
+  .goodsList {
+    width: 100%;
+    height: 261rpx;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    .g-item {
+      width: 100%;
+      height: 200rpx;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      padding: 30rpx 0;
+      .left {
+        width: 200rpx;
+        img {
+          width: 200rpx;
+          height: 200rpx;
+        }
+      }
+      .right {
+        flex: 1;
+        margin-left: 20rpx;
+        .word {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .price {
+          margin-top: 70rpx;
+          color: #eb4450;
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .bottomLine {
+      text-align: center;
+      color: #999;
+      padding: 40rpx 0;
+    }
+  }

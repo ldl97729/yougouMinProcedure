@@ -1,0 +1,122 @@
+.address {
+    .no-add {
+        padding: 0px 15rpx;
+        display: flex;
+        justify-content: space-between;
+        line-height: 88rpx;
+    }
+    .yes-add {
+        padding: 0px 15rpx;
+        line-height: 88rpx;
+        .msg{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    img {
+        width: 100%;
+        height: 14rpx;
+        display: block;
+    }
+    border-bottom: 20rpx solid #f4f4f4;
+}
+.goodsList{
+   .top {
+       height: 87rpx;
+       border-bottom: 1px solid #dddddd;
+       line-height: 87rpx;
+       padding-left: 80rpx;
+   }
+   .list {
+       .item {
+           display: flex;
+           .left {
+               width: 88rpx;
+               text-align: center;
+               line-height: 205rpx;
+             icon {}
+           }
+           .right {
+               flex: 1;
+               display: flex;
+               height: 165rpx;
+               padding: 20rpx 0px;
+               border-bottom: 1px solid #dddddd;
+                .img {
+                    img {
+                        width: 160rpx;
+                        height: 160rpx;
+                    }
+                }
+                .word {
+                    .msg {
+                        padding: 0 20rpx;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp:2;
+                        -webkit-box-orient: vertical;
+                    }
+                    .price {
+                        display: flex;
+                        margin-top: 20rpx;
+                        padding: 0px 20rpx;
+                        justify-content: space-between;
+                        .money {}
+                        .count {
+                            display: flex;
+                            span {
+                                width: 52rpx;
+                                height: 42rpx;
+                                border: 1px solid #666;
+                                text-align: center;
+                                line-height: 42rpx;
+                            }
+                            input {
+                                width: 80rpx;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+           }
+       }
+   } 
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    height: 97rpx;
+    .selAll {
+        flex: 1;
+        line-height: 97rpx;
+        display: flex;
+        icon {
+            margin: 20rpx 30rpx 0;
+        }
+    }
+    .total {
+        flex: 1;
+        span {
+            display: block;
+            font-size: 16px;
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+    }
+    .pay {
+        flex: 1;
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: #eb4450;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}
